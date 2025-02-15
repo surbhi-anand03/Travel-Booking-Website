@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e6d8df, rgb(228, 154, 166));
+}
+
+/* Form Container (Box Styling) */
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow effect */
+    text-align: center;
+    border: 2px solid #a9296c; /* Border color around the form */
+}
+
+/* Form Title */
+h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;  /* Makes the title stand out more */
+    letter-spacing: 1px; /* Adds spacing between the letters */
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px; /* Increased space between inputs */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px; /* Added padding for more comfortable input fields */
+    border: 2px solid #ccc;
+    border-radius: 8px; /* Rounded borders for the inputs */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.input-group input:focus {
+    border-color: #a9296c;
+    outline: none;
+    box-shadow: 0 0 8px rgba(169, 41, 108, 0.5); /* Light glow effect when focused */
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 14px; /* Slightly larger button for better interaction */
+    background: #a9296c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s background-color ease, transform 0.3s ease; /* Animation on hover */
+}
+
+.btn:hover {
+    background: #9e2553; /* Subtle hover effect */
+    transform: translateY(-2px); /* Lift effect when hovering */
+}
+
+/* Toggle Link */
+.toggle-text {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.toggle-text a {
+    color: #a9296c;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toggle-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+    }
+}
